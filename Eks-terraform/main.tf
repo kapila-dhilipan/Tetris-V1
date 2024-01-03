@@ -1,3 +1,8 @@
+provider "aws" {
+  region = "us-west-1"  # Specify your desired AWS region
+}
+
+
 data "aws_iam_policy_document" "assume_role" {
   statement {
     effect = "Allow"
@@ -34,7 +39,7 @@ data "aws_subnets" "public" {
 }
 #cluster provision
 resource "aws_eks_cluster" "example" {
-  name     = "Newcluster"
+  name     = "my-eks-cluster"
   role_arn = aws_iam_role.example.arn
 
   vpc_config {
