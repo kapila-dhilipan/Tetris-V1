@@ -7,8 +7,8 @@ terraform {
   }
 }
 
-# Configure the AWS Provider
-#provider "aws" {
- # region = "us-east-1"  # Choose a valid AWS region from the supported list
-#}
+#Configure the AWS Provider
+provider "aws" {
+  region = "us-south-1"  # Choose a valid AWS region from the supported list
+}
 
