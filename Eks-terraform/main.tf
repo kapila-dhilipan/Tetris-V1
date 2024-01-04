@@ -1,6 +1,3 @@
-provider "aws" {
-  region = "ap-south-1"  # Specify your desired AWS region
-}
 
 
 data "aws_iam_policy_document" "assume_role" {
