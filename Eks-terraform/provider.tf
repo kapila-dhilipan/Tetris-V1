@@ -9,6 +9,6 @@ terraform {
 
 #Configure the AWS Provider
 provider "aws" {
-  region = "us-south-1"  # Choose a valid AWS region from the supported list
+  region = "ap-south-1"  # Choose a valid AWS region from the supported list
 }
 
